@@ -1,0 +1,79 @@
+<html>
+<head>
+    <style>
+        .important {
+          color: red;
+        }
+        .background-image {
+          background-image: url('CAC.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-color: rgba(0, 0, 0, 0.5);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100vw;
+          height: 30vh;
+        }
+        Form {
+          background-color: rgba(22, 151, 65, 0.8); /* Form background color */
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  
+        }
+        
+      </style> 
+    <title>FORM</title>
+</head>
+<body>
+    <div class="background-image"></div>
+    <Form>
+        <h2>WELCOME TO CAC PORTAL</h2>
+        <label for="username">USERNAME<span class="important">*</span>:</label>
+        <input type="text" id="username" name="username" placeholder="Enter username/email" required><br>
+
+        <label for="password">PASSWORD<span class="important">*</span>:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required><br>
+        <button type="sign in">SIGN IN</button><br><br>
+         
+        <h2>SIGN UP FORM</h2>
+        <label for="name">NAME<span class="important">*</span>:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+
+        <label for="email">EMAIL<span class="important">*</span>:</label>
+        <input type="text" id="email" name="email" placeholder="Enter your email" required><br>
+        
+        <label for="age">AGE:</label>
+        <input type="number" id="age" name="age" min="18" max="100" step="1" required><br>
+        
+        <label for="gender">GENDER:</label>
+        <input type="radio" id="gender" name="gender" value="male">Male
+        <input type="radio" id="gender" name="gender" value="female">Female <br>
+        
+        <h3>NEW REGISTRATION:</h3>
+        <label>
+          <input type="checkbox" name="Registration" value="BN"> Business Name
+        </label>
+        <label>
+          <input type="checkbox" name="Registration" value="RN"> Company
+        </label>
+        <label>
+          <input type="checkbox" name="Registration" value="NGO"> NGO's
+        </label>
+        </select>
+        <br>
+
+        <label for="cac service">CAC POST-INCORPORATION SERVICES:</label>
+        <select id="cac service" name="cac service">
+          <option value="bn">Annual Returns</option>
+          <option value="rn">Re-allotment of Shares</option>
+          <option value="pc">Business Name to Company Upgrade</option>
+        </select>
+        <br>
+        <button type="submit">REGISTER</button>
+    </Form>
+</div>
+</body>
+</html>
